@@ -96,9 +96,8 @@ Deploy this stack to AWS
   ```
   https://psaa1b6392.execute-api.us-west-1.amazonaws.com/production/vehicles/4?ln=es
   ```
------------
 
----
+
 ###### Documentation in swagger see: https://app.swaggerhub.com/apis-docs/JHAMSELRAEC/reto-sls-node/1.0.0#/peoples/listPeoples
 ---
 
