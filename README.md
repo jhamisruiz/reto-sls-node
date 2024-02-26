@@ -99,7 +99,7 @@ Deploy this stack to AWS
 -----------
 
 ---
-# Documentation in swagger see: https://app.swaggerhub.com/apis-docs/JHAMSELRAEC/reto-sls-node/1.0.0#/peoples/listPeoples
+###### Documentation in swagger see: https://app.swaggerhub.com/apis-docs/JHAMSELRAEC/reto-sls-node/1.0.0#/peoples/listPeoples
 ---
 
 <br>
