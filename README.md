@@ -15,6 +15,7 @@ Depending on your preferred package manager, follow the instructions below to de
 - Run `npm i` to install the project dependencies
 
 - Run `npm run dev` to run local server
+---
 People
 - `POST   | http://localhost:3000/dev/people`
 - `GET    | http://localhost:3000/dev/people`
@@ -24,9 +25,9 @@ People
 Vehicles
 - `GET    | http://localhost:3000/dev/vehicles`
 - `GET    | http://localhost:3000/dev/vehicles/{id}`
+--
 
 Deploy this stack to AWS
-
 ### Develop
 - Run `npm run deploy:dev `
 
@@ -95,8 +96,12 @@ Deploy this stack to AWS
   ```
   https://psaa1b6392.execute-api.us-west-1.amazonaws.com/production/vehicles/4?ln=es
   ```
-
 -----------
+
+---
+# Documentation in swagger see: https://app.swaggerhub.com/apis-docs/JHAMSELRAEC/reto-sls-node/1.0.0#/peoples/listPeoples
+---
+
 <br>
 ## Test your service
 
@@ -211,6 +216,60 @@ This folder is divided in:
 Any tsconfig.json can be used, but if you do, set the environment variable `TS_NODE_CONFIG` for building the application, eg `TS_NODE_CONFIG=./tsconfig.app.json npx serverless webpack`
 
 
+---
+### Extra
+
+#### MODELOS
+
+  ```ts
+ interface TestPeople {
+    id?: string,
+    first_name?: string,
+    mass?: string,
+    hair_color?: string,
+    eye_color?: string,
+    skin_color?: string,
+    height?: string,
+    gender?: string,
+    birth_year?: string,
+    created?: string,
+    edited?: string
+}
+
+  // Ejemplo:
+  {
+	  first_name: 'Luke test',
+      mass: '77 test',
+      hair_color: 'Blond test',
+      eye_color: 'Blue test',
+      skin_color: 'Fair test',
+      height: '172 test',
+      gender: 'Male test',
+      birth_year: '19  test'
+  }
+  
+  interface Vehicle {
+    id: number | string;
+    name: string;
+    model: string;
+    manufacturer: string;
+    cost_in_credits: string;
+    length: string;
+    max_atmosphering_speed: string;
+    crew: string;
+    passengers: string;
+    cargo_capacity: string;
+    consumables: string;
+    vehicle_class: string;
+    pilots: string[]; // assuming pilots are identified by URLs
+    films: string[]; // assuming films are identified by URLs
+    created: string;
+    edited: string;
+    url: string;
+}
+
+  ```
+---
 usar esquemas es una buena practica.
 
 tipado 
