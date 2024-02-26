@@ -1,0 +1,10 @@
+- name: Petición HTTP GET para obtener lista de personas
+  endpoint:
+    function: list-people-handler
+  response:
+    status: 200
+- name: Petición HTTP GET para obtener lista de planetas
+  endpoint:
+    function: list-vehicle-handler
+  response:
+    status: 200
