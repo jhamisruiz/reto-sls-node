@@ -218,7 +218,7 @@ Any tsconfig.json can be used, but if you do, set the environment variable `TS_N
 ---
 ### Extra
 
-#### MODELOS
+#### MODELS
 
   ```ts
  interface TestPeople {
@@ -269,6 +269,3 @@ Any tsconfig.json can be used, but if you do, set the environment variable `TS_N
 
   ```
 ---
-usar esquemas es una buena practica.
-
-tipado 
